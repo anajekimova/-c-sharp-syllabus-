@@ -6,20 +6,14 @@ namespace VariablesAndNames
     {
         private static void Main(string[] args)
         {
-            int cars, drivers, passengers, cars_not_driven, cars_driven;
-            double seats_in_a_car, carpool_capacity;
 
-            cars = 100; //cars
-            seats_in_a_car = 4.0; //seats in a car
-            drivers = 28; // drivers
-            passengers = 90; // passengers
-            //cars_not_driven  // free cars
-            //cars_driven ; // cars driven at the moment
-            //carpool_capacity = // carpool capacity
-            //average_passengers_per_car = // average passengers per car
-            cars_not_driven = cars - drivers;
-            carpool_capacity = drivers * seats_in_a_car;
-            cars_driven = cars - cars_not_driven;
+            int cars = 100; 
+            double seats_in_a_car = 4.0; 
+            double drivers = 28; 
+            int passengers = 90; 
+            double cars_not_driven = cars - drivers;
+            double carpool_capacity = drivers * seats_in_a_car;
+            double cars_driven = cars - cars_not_driven;
             double average_passengers_per_car = passengers / cars_driven; 
             
 
@@ -36,9 +30,7 @@ namespace VariablesAndNames
             Console.WriteLine("We need to put about " + average_passengers_per_car.ToString("0.00") + " in each car.");
             Console.ReadKey();
         }
-        //decimal value = 123.456m;
-        //Console.WriteLine("Your account balance is {0:C2}.", value);
-// Displays "Your account balance is $123.46."
+        
 
     }
 }
