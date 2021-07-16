@@ -18,13 +18,13 @@ namespace VariablesAndNames
             //carpool_capacity = // carpool capacity
             //average_passengers_per_car = // average passengers per car
 
-            Console.WriteLine("There are " + cars + " cars available.");
+            /*Console.WriteLine("There are " + cars + " cars available.");
             Console.WriteLine("There are only " + drivers + " drivers available.");
             Console.WriteLine("There will be " + cars_not_driven + " empty cars today.");
             Console.WriteLine("We can transport " + carpool_capacity + " people today.");
             Console.WriteLine("We have " + passengers + " to carpool today.");
             Console.WriteLine("We need to put about " + average_passengers_per_car + " in each car.");
-            Console.ReadKey();
+            Console.ReadKey();*/
         }
     }
 }

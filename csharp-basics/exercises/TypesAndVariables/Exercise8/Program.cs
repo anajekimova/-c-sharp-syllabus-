@@ -13,8 +13,6 @@ namespace Exercise8
             double days = hours / 24;
             double  years = days / 365;
 
-            
-             
             Console.WriteLine($"Approximately it will be {days.ToString("0")} days  and {years.ToString("0")} years.");
         }
     }
