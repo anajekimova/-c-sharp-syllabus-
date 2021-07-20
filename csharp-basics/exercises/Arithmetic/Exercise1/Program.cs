@@ -17,16 +17,15 @@ namespace Exercise1
             double num = 15;
            if (num1 == num || num2 == num)
             {
-                Console.WriteLine("It true!");
+                Console.WriteLine("It is  true!");
             } 
             else if(sum == num || difference == num || difference1 == num)
             {
-                Console.WriteLine("It true!");
+                Console.WriteLine("It is  true!");
             } else
             {
-                Console.WriteLine("It false!");
+                Console.WriteLine("It is false!");
             }
-
             }  
         }
     }
