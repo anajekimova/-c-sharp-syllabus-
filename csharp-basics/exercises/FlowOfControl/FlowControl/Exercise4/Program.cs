@@ -58,6 +58,7 @@ namespace Exercise4
                 default:
                     Console.Write("Not a valid day.");
                     break;
+
             }
         }
     }
