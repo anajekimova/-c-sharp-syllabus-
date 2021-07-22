@@ -8,17 +8,17 @@ namespace CalculateArea
 {
     public class Geometry
     {
-        public static double areaOfCircle(decimal radius)
+        public static double AreaOfCircle(decimal radius)
         {
              return  Math.PI * (double)radius * 2;
         }
 
-        public static double areaOfRectangle(decimal length, decimal width)
+        public static double AreaOfRectangle(decimal length, decimal width)
         {
             return (double)length * (double)width;
         }
 
-        public static double areaOfTriangle(decimal ground, decimal h)
+        public static double AreaOfTriangle(decimal ground, decimal h)
         {
             return (double)ground * (double)h * 0.5;
         }

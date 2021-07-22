@@ -13,7 +13,8 @@ namespace Exercise2
             if(check == 0)
             {
                 Console.WriteLine("It is even");
-            } else
+            } 
+            else
             {
                 Console.WriteLine("It is  odd");
             }

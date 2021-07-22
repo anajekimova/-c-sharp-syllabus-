@@ -20,17 +20,17 @@ namespace CalculateArea
                 if (choice == 1)
                 {
                     Console.WriteLine("You chose 1");
-                    calculateCircleArea();
+                    CalculateCircleArea();
                     Console.ReadKey();
                 }
                 else if (choice == 2)
                 {
-                    calculateRectangleArea();
+                    CalculateRectangleArea();
                     Console.ReadKey();
                 }
                 else if (choice == 3)
                 {
-                    calculateTriangleArea();
+                    CalculateTriangleArea();
                     Console.ReadKey();
                 }
                 else if (choice == 4)
@@ -67,38 +67,38 @@ namespace CalculateArea
             return userChoice;
         }
 
-        public static void calculateCircleArea()
+        public static void CalculateCircleArea()
         {
             
             Console.WriteLine("What is the circle's radius? ");       
             var keyboard = Console.ReadLine();
             decimal.TryParse(keyboard, out var radius);
             Console.WriteLine("The circle's area is "
-                    + Geometry.areaOfCircle(radius));
+                    + Geometry.AreaOfCircle(radius));
         }
 
-        public static void calculateRectangleArea()
+        public static void CalculateRectangleArea()
         {
 
             var keyboard = Console.ReadKey();
-            Console.WriteLine("Enter length? ");
+            Console.WriteLine("What is th rectangle`s length? ");
             decimal.TryParse(Console.ReadLine(), out var length);          
-            Console.WriteLine("Enter width? ");
+            Console.WriteLine("What is rectangle`s width? ");
             decimal.TryParse(Console.ReadLine(), out var width);
             Console.WriteLine("The rectangle's area is "
-                    + Geometry.areaOfTriangle(length, width));
+                    + Geometry.AreaOfTriangle(length, width));
         }
 
-        public static void calculateTriangleArea()
+        public static void CalculateTriangleArea()
         {
            
             var keyboard = Console.ReadKey();
-            Console.WriteLine("Enter length of the triangle's base? ");
+            Console.WriteLine("Enter length of the triangle's base: ");
             decimal.TryParse(Console.ReadLine(), out var ground);
-            Console.WriteLine("Enter triangle's height? ");
+            Console.WriteLine("Enter triangle's height: ");
             decimal.TryParse(Console.ReadLine(), out var height);
             Console.WriteLine("The triangle's area is "
-                    + Geometry.areaOfRectangle(ground, height));
+                    + Geometry.AreaOfRectangle(ground, height));
         }
     }
 }

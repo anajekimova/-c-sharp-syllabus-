@@ -13,20 +13,16 @@ namespace Exercise1
             double sum = num1 + num2;
             double difference = num1 - num2;
             double difference1 = num2 - num1;
-
             double num = 15;
-           if (num1 == num || num2 == num)
+            if (num1 == num || num2 == num || sum == num || difference == num || difference1 == num)
             {
                 Console.WriteLine("It is  true!");
-            } 
-            else if(sum == num || difference == num || difference1 == num)
-            {
-                Console.WriteLine("It is  true!");
-            } else
+            }
+            else
             {
                 Console.WriteLine("It is false!");
             }
-            }  
         }
     }
+}
    

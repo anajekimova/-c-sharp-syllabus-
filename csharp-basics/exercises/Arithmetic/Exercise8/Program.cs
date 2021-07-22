@@ -43,9 +43,3 @@ namespace Exercise8
         }
     }
 }
-
-
-
-
-
-
