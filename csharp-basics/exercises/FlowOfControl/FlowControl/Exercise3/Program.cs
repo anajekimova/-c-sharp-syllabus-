@@ -4,10 +4,9 @@ namespace TenBillion
 {
     class Program
     {
-        //TODO Write a C# program that reads an positive integer and count the number of digits the number (less than ten billion) has.
+        
         static void Main(string[] args)
         { 
-
             Console.WriteLine("Input an integer number less than ten billion: ");
             long input = long.Parse(Console.ReadLine());
 
@@ -16,11 +15,9 @@ namespace TenBillion
                 input *= -1;
             }
 
-            //todo - check if Long
             if (input > 10)  
             {
-              
-
+            
                 if (input >= 10000000000L) 
                 {
                     Console.WriteLine("Number is greater or equals 10,000,000,000!");
