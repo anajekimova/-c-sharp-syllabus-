@@ -19,7 +19,7 @@ namespace Exercise9
                 Console.WriteLine($"Bmi is healthy.");
             else if (bmi < 18.5)
                 Console.WriteLine($"BMI is underweight.{bmi}");
-            else if (bmi >= 24.9 || bmi < 30)
+            else if (bmi < 24.9 )
                 Console.WriteLine($"BMI is overweight. ");
         }
     }

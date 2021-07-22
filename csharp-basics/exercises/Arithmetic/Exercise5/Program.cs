@@ -28,7 +28,6 @@ namespace Exercise5
                 }
 
                 Console.WriteLine("Well done! The answer was " + returnValue);
-
             }
         }
     }
