@@ -82,7 +82,6 @@ namespace Exercise8
             Console.ReadLine();
             Console.Read();
 
-
         }
     }
 }
