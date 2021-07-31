@@ -8,10 +8,8 @@ namespace Exercise8
     {
         static void Main(string[] args)
         {
-
             Random random = new Random((int)DateTime.Now.Ticks);
             string[] wordBank = { "Dog", "Cat", "Informatic", "Orange", "Holiday" };
-
             string randomWord = wordBank[random.Next(0, wordBank.Length)];
             string wordTOUpper = randomWord.ToUpper();
 
@@ -25,7 +23,6 @@ namespace Exercise8
             int move = 5;
             bool won = false;
             int lettersRevealed = 0;
-
             string input;
             char guess;
 
@@ -48,7 +45,7 @@ namespace Exercise8
                 }
 
                 if (wordTOUpper.Contains(guess))
-                {
+                { 
                     correctGuesses.Add(guess);
 
                     for (int i = 0; i < randomWord.Length; i++)
@@ -65,11 +62,9 @@ namespace Exercise8
                 }
                 else
                 {
-         
                     Console.WriteLine($"Nope, there's no '{guess}' in it!");
                     move--;
                 }
-
                 Console.WriteLine(displayToPlayer.ToString());
             }
 
@@ -81,7 +76,6 @@ namespace Exercise8
             Console.Write("Press ENTER to exit....");
             Console.ReadLine();
             Console.Read();
-
         }
     }
 }

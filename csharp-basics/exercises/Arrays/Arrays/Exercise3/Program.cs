@@ -11,7 +11,8 @@ namespace Exercise3
             int sum = 0;
             int i = 0;
             float average = 0.0F;
-            for ( i =0; i < numbers.Length; i++){
+            for ( i =0; i < numbers.Length; i++)
+            {
                 sum += numbers[i];
             }
             average = (float)sum / numbers.Length;
