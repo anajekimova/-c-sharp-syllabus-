@@ -1,26 +1,28 @@
 ﻿using System;
 
 namespace Exercise2
-{
-    class Program
     {
-        static void Main(string[] args)
+        class Program
         {
-            int i, n;
-            
-            Console.WriteLine("Input number of terms : ");
-
-            n = Convert.ToInt32(Console.ReadLine());
-            /*
-            todo - complete loop to multiply i with itself n times, it is NOT allowed to use Math.Pow()
-            */
-            for (i = 0; i < n; i++)
+            static void Main(string[] args)
             {
-              //  Console.WriteLine(Pow(i,n));
+                int i, n;
+
+                Console.WriteLine("Input number of terms : ");
+                n = Convert.ToInt32(Console.ReadLine());
+
+                for (i = 1; i <= n; i++)
+                {
+                    int pow = i;
+                    for (int j = 1; j < n; j++)
+                    {
+                        pow *= i;
+                    }
+                    Console.WriteLine($"{i}^{n} = {pow}");
+                }
+                Console.ReadKey();
             }
-
-            Console.ReadKey();
-
         }
     }
-}
+
+    
