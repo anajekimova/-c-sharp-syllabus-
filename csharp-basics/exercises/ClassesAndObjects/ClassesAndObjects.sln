@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tictactoe", "tictactoe\tict
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxableExample", "TaxableExample\TaxableExample.csproj", "{B12BD80F-9F42-4167-8054-A635CFAE08F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1\Exercise1.csproj", "{45080CD4-9ABC-4EDA-A059-E13579AB23BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1", "Exercise1\Exercise1.csproj", "{45080CD4-9ABC-4EDA-A059-E13579AB23BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise4", "Exercise 4\Exercise4.csproj", "{9047B747-B07E-4652-A3CE-22172C02C2FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{45080CD4-9ABC-4EDA-A059-E13579AB23BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45080CD4-9ABC-4EDA-A059-E13579AB23BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45080CD4-9ABC-4EDA-A059-E13579AB23BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9047B747-B07E-4652-A3CE-22172C02C2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9047B747-B07E-4652-A3CE-22172C02C2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9047B747-B07E-4652-A3CE-22172C02C2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9047B747-B07E-4652-A3CE-22172C02C2FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
