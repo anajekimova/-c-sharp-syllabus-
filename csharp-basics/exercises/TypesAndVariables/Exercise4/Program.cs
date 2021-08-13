@@ -6,7 +6,15 @@ namespace Exercise4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string name;
+            int birthYear;
+            Console.WriteLine("Enter name");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter year of birth");
+            int.TryParse(Console.ReadLine(), out birthYear);
+
+            Console.WriteLine($"My name is {name} and was born in {birthYear}");
+
         }
     }
 }
