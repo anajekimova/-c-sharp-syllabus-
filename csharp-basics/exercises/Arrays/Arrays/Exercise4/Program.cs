@@ -8,7 +8,6 @@ namespace Exercise4
 {
     class Program
     {
-        //TODO: Write a C# program to test if an array contains a specific value.
         private static void Main(string[] args)
         {
             int[] myArray =
@@ -18,13 +17,20 @@ namespace Exercise4
                 1456, 2265, 1457, 2456
             };
 
-            /*
-            fixme - check if contains number 1245 
-            for (?) {
-                ......
+            int toFind = 1245;
+            
+            if(myArray.Contains(toFind))
+            {
                 Console.WriteLine("Contains!");
             }
-            */
+            else
+            {
+                Console.WriteLine("It not contains");
+            }
+
+            Console.ReadKey();
+           
+            }        
         }
     }
-}
+
