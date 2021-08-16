@@ -6,7 +6,6 @@ namespace Exercise7
 {
     class Dog
     {
-
         private string _name;
         private string _sex;
         private string _mother;

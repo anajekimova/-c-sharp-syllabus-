@@ -7,7 +7,6 @@ namespace VideoStore
     class VideoStore
     {
         private List<Video> _movies;
-
         public object Vidoe { get; private set; }
 
         public VideoStore()
