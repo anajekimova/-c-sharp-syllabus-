@@ -10,28 +10,36 @@ namespace Account
     {
         private static void Main(string[] args)
         {
-            var aAccount = new Account("A account", 100.00);
-            var bAccount = new Account("B account",0);
-            var cAccount = new Account("C Account", 0);
-            Console.WriteLine("Initial state");
-            Console.WriteLine(aAccount);
-            Console.WriteLine(bAccount);
-            Console.WriteLine(cAccount);
-            aAccount.Name = "GGGG";
-            Transfer(aAccount,bAccount, 50.0);
-            Transfer(bAccount,cAccount, 25.0);
-            
-            Console.WriteLine("Final state");
-            Console.WriteLine(aAccount);
-            Console.WriteLine(bAccount);
-            Console.WriteLine(cAccount);
+            Account bartosAccount = new Account("Barto's account", 100.00);
+            Account bartosSwissAccount = new Account("Barto's account in Switzerland", 1000000.00);
 
-            Console.ReadKey();
+            Console.WriteLine("Initial state");
+            Console.WriteLine(bartosAccount);
+            Console.WriteLine(bartosSwissAccount);
+
+            bartosAccount.Withdrawal(20);
+            Console.WriteLine("Barto's account balance is now: " + bartosAccount.Balance());
+            bartosSwissAccount.Deposit(200);
+            Console.WriteLine("Barto's Swiss account balance is now: " + bartosSwissAccount.Balance());
+
+            Console.WriteLine("Final state");
+            Console.WriteLine(bartosAccount);
+            Console.WriteLine(bartosSwissAccount);
+
+            Account matt = new Account("Matt's account", 1000);
+            Account myAccount = new Account("My account", 0);
+
+            var money = matt.Withdrawal(100);
+            myAccount.Deposit(money);
+            Console.WriteLine("Final state");
+            Console.WriteLine(matt);
+            Console.WriteLine(myAccount);
+            Console.ReadLine();
         }
 
         public static void Transfer(Account from, Account to, double howMuch)
         {
-            to.deposit(from.withdrawal(howMuch));
+            to.Deposit(from.Withdrawal(howMuch));
         }
     }
 }
