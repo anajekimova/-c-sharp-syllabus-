@@ -1,64 +1,49 @@
 using System;
+using System.Collections.Generic;
 
 namespace PhoneBook
 {
     public class PhoneDirectory
     {
-        private PhoneEntry[] _data;
-        private int _dataCount;
+        public static SortedDictionary<string, int> information = new SortedDictionary<string, int>();
+        private int _number;
+        private string _name;
 
-        public PhoneDirectory() {
-            _data = new PhoneEntry[1];
-            _dataCount = 0;
-        }
-
-        private int Find(string name) {
-            for (var i = 0; i < _dataCount; i++) 
-            {
-                if (_data[i].name.Equals(name)) 
-                {
-                    return i;
-                }
-            }
-
-            return -1;
-        }
-
-        public string GetNumber(string name) 
+        public PhoneDirectory(string name, int number)
         {
-            var position = Find(name);
-            if (position == -1) 
+            _number = number;
+            _name = name;
+            information.Add(name, number);
+        }
+
+        public void PrintNameNumber()
+        {
+            Console.WriteLine($"Name: {_name}, Numer: {_number}");
+        }
+
+        public static void Print()
+        {
+            foreach (KeyValuePair<string, int> key in information)
             {
-                return null;
-            } 
-            else 
-            {
-                return _data[position].number;
+                Console.WriteLine(key.Key, key.Value);
             }
         }
 
-        public void PutNumber(string name, string number) 
+        public static void GetNumber(string name)
         {
-            if (name == null || number == null) 
+            bool found = false;
+            foreach (KeyValuePair<string, int> pair in information)
             {
-                throw new Exception("name and number cannot be null");
-            }
-
-            var i = Find(name);
-            if (i >= 0) 
-            {
-                _data[i].number = number;
-            }
-            else 
-            {
-                if (_dataCount == _data.Length) 
+                if (pair.Key == name)
                 {
-                    Array.Resize(ref _data, (2 * _data.Length));
+                    Console.WriteLine($"{pair.Value} - this number is owned by a {pair.Key}");
+                    found = true;
                 }
-
-                var newEntry = new PhoneEntry {name = name, number = number}; // Create a new pair.
-                _data[_dataCount] = newEntry;   // Add the new pair to the array.
-                _dataCount++;
+                else if(found == false)
+                {
+                    Console.WriteLine($"Person not found");
+                    found = false;
+                }
             }
         }
     }
