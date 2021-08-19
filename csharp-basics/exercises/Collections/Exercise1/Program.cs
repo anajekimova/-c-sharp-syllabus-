@@ -22,11 +22,26 @@ namespace Exercise1
         {
             string[] array = { "Audi", "BMW", "Honda", "Mercedes", "VolksWagen", "Mercedes", "Tesla" };
 
-            //todo - replace array with an List and print out the results
+            Console.WriteLine("List:");
+            var list = array.ToList<string>();
+            Console.WriteLine(string.Join(", ", list));
+            Console.Write("\n");
+            
+            Console.WriteLine("Hash Set:");
+            var hasSet = array.ToHashSet<string>();
+            Console.WriteLine(string.Join(", ", list));
+            Console.Write("\n");
 
-            //todo - replace array with a HashSet and print out the results
-
-            //todo - replace array with a Dictionary (use brand as key and origination as value) and print out the results
+            Console.WriteLine("Dictionary:");
+            var dictionary = new Dictionary<string, string>()
+            {
+                {"Audi", "Q7"},{"BMW", "X6"},{"Honda", "Cr-v"},{"Mercedes", "C-180"},{"Volkswagen", "Passat 6"},{"Tesla", "Model 3"}
+            };
+            foreach (var i in dictionary)
+            {
+                Console.WriteLine($"{i.Key} -> {i.Value}");
+            }
+            Console.ReadKey();         
         }
     }
 }

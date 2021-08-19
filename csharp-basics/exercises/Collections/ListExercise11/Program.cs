@@ -10,19 +10,51 @@ namespace ListExercise11
     {
         static void Main(string[] args)
         {
-            //TODO: Create an List with string elements
+            var  animals = new List<string> { "Panda", "Rabbit", "Dog" };
+            Console.WriteLine(string.Join(", ", animals));
+            Console.Write("\n");
 
-            //TODO: Add 10 values to list
+            animals.Add("Lion");
+            animals.Add("Fox");
+            animals.Add("Tiger");
+            animals.Add("Cat");
+            animals.Add("Monkey");
+            animals.Add("Koala");
+            animals.Add("Gorilla");
+            animals.Add("Leopard");
+            animals.Add("Wolf");
+            animals.Add("Camel");
+            
+            Console.WriteLine(string.Join(", ", animals));
+            Console.Write("\n");
 
-            //TODO: Add new value at 5th position
+            animals.Insert(5, "Zebra");
+            Console.WriteLine(string.Join(", ", animals));
+            Console.Write("\n");
 
-            //TODO: Change value at last position (Calculate last position programmatically)
+            animals[animals.Count - 1] = "Pantera";
+            Console.WriteLine(string.Join(", ", animals));
+            Console.Write("\n");
 
-            //TODO: Sort your list in alphabetical order
+            animals.Sort();
+            Console.WriteLine(string.Join(", ", animals));
+            Console.Write("\n");
 
-            //TODO: Check if your list contains "Foobar" element
+            if (animals.Contains( "Foobar"))
+            {
+                Console.WriteLine("Foobar is here.");
+            }
+            else
+            {
+                Console.WriteLine("Foobar no here.");
+            }
+            Console.Write("\n");
 
-            //TODO: Print each element of list using loop
+            foreach (var i in animals)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
         }
     }
 }
