@@ -6,7 +6,7 @@ namespace Hierarchy
 {
     class Tiger: Felime
     {
-        public Tiger(string name, int weight, string type, string region):
+        public Tiger(string name, int weight, string type, string region) :
             base(name, weight, type, region)
         {
 
@@ -27,12 +27,13 @@ namespace Hierarchy
             else
             {
                 Console.WriteLine($"{AnimalType} are not eating that type of food!");
+                return false;
             }
         }
 
             public override string ToString()
         {
-            return $"{AnimalType} {AnimalName} {_breed} {AnimalWeight} {LivingRegion} {FoodEaten}";
+            return $"{AnimalType} {AnimalName}  {AnimalWeight} {LivingRegion} {FoodEaten}";
         }
     }
  }

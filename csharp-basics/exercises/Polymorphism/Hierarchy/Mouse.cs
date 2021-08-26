@@ -27,8 +27,8 @@ namespace Hierarchy
             else
             {
                 Console.WriteLine($"{AnimalType} are not eating that type of food!");
+                return false;
             }
         }
-
     }
 }

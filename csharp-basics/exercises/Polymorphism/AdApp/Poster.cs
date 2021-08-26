@@ -35,6 +35,5 @@ namespace AdApp
         {
             return $"\nPoster:Cost {base.Cost()}";
         }
-
     }
 }

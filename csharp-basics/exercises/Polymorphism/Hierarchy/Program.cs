@@ -8,6 +8,7 @@ namespace Hierarchy
         static void Main(string[] args)
         {
             var animal = new List<Animal>();
+
             do
             {
                 Console.WriteLine("Please write: Animal type, Animal name ,  weight, Animal living region. If animal type is cate please write breed. ");
@@ -16,14 +17,12 @@ namespace Hierarchy
 
                 if (animalArr[0] == "Cat" || animalArr[0] == "cat")
                 {
-                    animal.Add(new Cat(animalArr[0], animalArr[1], animalArr[3], animalArr[4], Convert.ToString(animalArr[2])));
+                    animal.Add(new Cat(animalArr[0], animalArr[1],  animalArr[3], animalArr[4], Convert.ToString(animalArr[2])));
                 }
-
                 else if (animalArr[0] == "Tiger" || animalArr[0] == "tiger")
                 {
                     animal.Add(new Tiger(animalArr[0], animalArr[1], animalArr[3], animalArr[4], Convert.ToString(animalArr[2])));
                 }
-
                 else if (animalArr[0] == "Mouse" || animalArr[0] == "mouse")
                 {
                     animal.Add(new Mouse(animalArr[0], animalArr[1], animalArr[3], Convert.ToString(animalArr[2])));
@@ -57,20 +56,12 @@ namespace Hierarchy
                 {
                     Console.WriteLine("It not correct.");
                     break;
-
                 }
-
+            } while (true);
                 {
-                    while (true)
-                    {
-                        Console.WriteLine(string.Join(",", animal));
-                        Console.ReadKey();
-                    }
-                }
+                Console.WriteLine(string.Join(",", animal));
+                Console.ReadKey();
             }
-         }
+        }
     }
 }
-
-        
-    

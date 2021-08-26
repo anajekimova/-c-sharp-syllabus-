@@ -17,7 +17,7 @@ namespace Firm
             _totalSale = rate;
         }
 
-        public void addSale(double totalSale)
+        public void AddSale(double totalSale)
         {
             _totalSale = totalSale;
         }
