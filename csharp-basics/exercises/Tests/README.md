@@ -6,7 +6,7 @@
 - Exercise 6
 
 ### Arithmetics
-- Exercise 1
+
 - Exercise 2
 - Exercise 6
 - Exercise 7
