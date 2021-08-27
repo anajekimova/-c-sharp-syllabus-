@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateArea", "..\Arithme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateArea.Tests", "CalculateArea.Tests\CalculateArea.Tests.csproj", "{7BB97B9E-DFF5-4272-8563-D3F245AFB362}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array.Exercise6", "..\Arrays\Arrays\Exercise6\Array.Exercise6.csproj", "{2F597541-62D2-4BC1-A953-0B8406B5A706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array.Exercise6.Tests", "Array.Exercise6.Tests\Array.Exercise6.Tests.csproj", "{63CB59F7-2E38-4748-94A0-2BF07DC1C7EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{7BB97B9E-DFF5-4272-8563-D3F245AFB362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BB97B9E-DFF5-4272-8563-D3F245AFB362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BB97B9E-DFF5-4272-8563-D3F245AFB362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F597541-62D2-4BC1-A953-0B8406B5A706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F597541-62D2-4BC1-A953-0B8406B5A706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F597541-62D2-4BC1-A953-0B8406B5A706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F597541-62D2-4BC1-A953-0B8406B5A706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CB59F7-2E38-4748-94A0-2BF07DC1C7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CB59F7-2E38-4748-94A0-2BF07DC1C7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CB59F7-2E38-4748-94A0-2BF07DC1C7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CB59F7-2E38-4748-94A0-2BF07DC1C7EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
