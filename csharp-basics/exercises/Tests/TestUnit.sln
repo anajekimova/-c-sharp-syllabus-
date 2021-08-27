@@ -17,11 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arith.Exercise6", "..\Arith
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arith.Exercise7", "..\Arithmetic\Exercise7\Arith.Exercise7.csproj", "{A11C92B0-EFA8-4D37-BCE1-8156D656048D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arith.Exercise7.Tests", "Arith.Exercise7.Tests\Arith.Exercise7.Tests.csproj", "{298EB254-7B04-4000-961B-EEEEDBBAE236}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arith.Exercise7.Tests", "Arith.Exercise7.Tests\Arith.Exercise7.Tests.csproj", "{298EB254-7B04-4000-961B-EEEEDBBAE236}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arith.Exercise8", "..\Arithmetic\Exercise8\Arith.Exercise8.csproj", "{DA3B6FFE-3B79-4026-903C-BABDFAB8EA5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arith.Exercise8.Tests", "Arith.Exercise8.Tests\Arith.Exercise8.Tests.csproj", "{44B1531B-DFC6-49D9-AE88-ACEEB65AE294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arith.Exercise8.Tests", "Arith.Exercise8.Tests\Arith.Exercise8.Tests.csproj", "{44B1531B-DFC6-49D9-AE88-ACEEB65AE294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateArea", "..\Arithmetic\CalculateArea\CalculateArea.csproj", "{6764DB75-045A-462A-896D-E7150A08DE85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateArea.Tests", "CalculateArea.Tests\CalculateArea.Tests.csproj", "{7BB97B9E-DFF5-4272-8563-D3F245AFB362}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{44B1531B-DFC6-49D9-AE88-ACEEB65AE294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44B1531B-DFC6-49D9-AE88-ACEEB65AE294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44B1531B-DFC6-49D9-AE88-ACEEB65AE294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6764DB75-045A-462A-896D-E7150A08DE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6764DB75-045A-462A-896D-E7150A08DE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6764DB75-045A-462A-896D-E7150A08DE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6764DB75-045A-462A-896D-E7150A08DE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BB97B9E-DFF5-4272-8563-D3F245AFB362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB97B9E-DFF5-4272-8563-D3F245AFB362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB97B9E-DFF5-4272-8563-D3F245AFB362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB97B9E-DFF5-4272-8563-D3F245AFB362}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
