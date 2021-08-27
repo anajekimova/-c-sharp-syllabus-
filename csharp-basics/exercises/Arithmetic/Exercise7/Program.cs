@@ -15,11 +15,11 @@ namespace GravityCalculator
             Console.WriteLine("The object's position after " + fallingTime + " seconds is " + finalPosition + " m.");
             Console.ReadKey();
         }
-        public static string CalculatedGravety(double gravity, double initVelocity, double initPosition, double fallingTime)
+        public static string CalculatedGravety(double gravity, double initVelocdity, double initPosition, double fallingTime)
         {
-            if (initVelocity >= 0 && initPosition >= 0 && fallingTime >= 0)
+            if (initPosition >= 0 && initPosition >= 0 && fallingTime >= 0)
             {
-                double finalPosition = 0.5 * gravity * Math.Pow(fallingTime, 2) + initPosition + initVelocity * fallingTime;
+                double finalPosition = 0.5 * gravity * Math.Pow(fallingTime, 2) + initPosition + initVelocdity * fallingTime;
                 return finalPosition.ToString();
             }
 
