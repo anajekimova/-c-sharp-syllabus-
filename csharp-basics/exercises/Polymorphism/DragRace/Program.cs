@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace DragRace
 {
-    class Program
+    public class Program
     {
 
         private static void Main(string[] args)
