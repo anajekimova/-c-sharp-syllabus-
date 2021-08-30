@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Exercise5
 {
-    class Date
+    public class Date
     {
         private int _day;
         private int _month;
