@@ -30,7 +30,7 @@ namespace Polym.Hierarchy.Tests
         }
 
         [TestMethod]
-        public void Tiger_TigerPrinOut_ReturnPrintOut()
+        public void Tiger_TigerPrinToString_ReturnPrintToSTring()
         {
             var tiger = new Tiger("Felime", "Tiger", 130, "Africa");
             string expected = "Felime [Tiger, 130, Africa, 0]";
