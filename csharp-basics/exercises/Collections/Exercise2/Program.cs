@@ -11,21 +11,35 @@ namespace Exercise2
         private static void Main(string[] args)
         {
             var mySet = new HashSet<string>();
-            var name = string.Empty;
-            Console.WriteLine("Enter name:");
 
-            do
-            {
-                name = Console.ReadLine();
-                mySet.Add(name);
-            }
-            while (name != string.Empty);
+            //TODO: add 5 values to Set.
+            mySet.Add("Red");
+            mySet.Add("Black");
+            mySet.Add("Yellow");
+            //..
 
-            foreach (var item in mySet)
+            Console.WriteLine("Should have 5 elements: ");
+            Console.WriteLine(string.Join(",", mySet)); //Pay attention on order!
+
+            //TODO: iterate through all elements in set
+            /*
+            for (...) 
             {
-                Console.WriteLine(item);
+                Console.WriteLine(element);
             }
-            Console.ReadKey();
+            */
+
+            //TODO: remove all values from set
+            Console.WriteLine("Is mySet empty: ");
+            Console.WriteLine(mySet.Count == 0);
+
+            //TODO: check if it is possible to add duplicated values
+            mySet.Add("Green");
+            mySet.Add("Orange");
+            mySet.Add("Green");
+            mySet.Add("Purple");
+
+            Console.WriteLine(string.Join(",", mySet));
         }
     }
 }

@@ -39,7 +39,7 @@ namespace PhoneBook
                     Console.WriteLine($"{pair.Value} - this number is owned by a {pair.Key}");
                     found = true;
                 }
-                else if(found == false)
+                else if (found == false)
                 {
                     Console.WriteLine($"Person not found");
                     found = false;

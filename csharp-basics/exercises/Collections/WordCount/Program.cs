@@ -7,26 +7,47 @@ using System.Threading.Tasks;
 
 namespace WordCount
 {
-    class Program
+    public class WordCount
     {
         static void Main(string[] args)
         {
-            var text1 = File.ReadAllLines("../../lear.txt");
-            var text2 = File.ReadAllText("../../lear.txt");
+           
+            var text = File.ReadAllText("../../lear.txt");
 
-            Console.WriteLine($"Line = {text1.Count()}");
+            Console.WriteLine($"Word: {CounWord(text)}");
+            Console.WriteLine($"Line: {WordLine(text)}");
+            Console.WriteLine($"Char: {CharCount(text)}");
+            Console.ReadKey();
+        }
 
-            string[] word = text2.Split(' ', '\'', '\n');
-            Console.WriteLine($"Words = {word.Length}");
+        public static int CounWord(string text)
+        {
+            string[] wordArr = text.Split(' ', '\'', '\n');
+            int count = 0;
 
+            foreach (var word in wordArr)
+            {
+                count++;
+            }
+
+            return count;
+        }
+
+        public static int WordLine(string text)
+        {
+            var lineCount = text.Split('\n').Length;
+            return lineCount;
+        }
+
+        public static int CharCount(string text)
+        {
             int chars = 0;
-            foreach (var i in text1)
+            foreach (var i in text)
             {
                 var charString = i.ToString().ToCharArray();
                 chars += charString.Length;
             }
-            Console.WriteLine($"Chars = {chars}");
-            Console.ReadKey();
+            return chars;
         }
     }
 }

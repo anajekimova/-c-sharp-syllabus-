@@ -20,12 +20,10 @@ namespace ListExercise5
             };
 
             Console.WriteLine(string.Join(",", colors));
-            Console.Write("\n");
 
-            colors[2] = "Yellow";
+            //TODO: Change the third element with "Yellow"
 
             Console.WriteLine(string.Join(",", colors));
-            Console.ReadKey();
         }
     }
 }

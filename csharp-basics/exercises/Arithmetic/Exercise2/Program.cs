@@ -2,15 +2,16 @@
 
 namespace Exercise2
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             int num;
             Console.WriteLine("Enter number");
             num = int.Parse(Console.ReadLine());
-            int check = num % 2;
-            if(check == 0)
+            var result = CheckEvenOrOdd(num);
+
+            if(result)
             {
                 Console.WriteLine("It is even");
             } 
@@ -18,8 +19,20 @@ namespace Exercise2
             {
                 Console.WriteLine("It is  odd");
             }
-            Console.WriteLine("Bue!");
-            
+            Console.WriteLine("Bue!");           
+        }
+
+        public static bool CheckEvenOrOdd(int input)
+        {
+            int check = input % 2;
+            if (check == 0)
+            {               
+                return true;
+            }
+            else
+            {                
+                return false;
+            }
         }
     }
 }
