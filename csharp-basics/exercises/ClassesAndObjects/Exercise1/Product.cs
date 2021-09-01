@@ -4,11 +4,7 @@ using System.Text;
 
 namespace Exercise1
 {
-<<<<<<< HEAD
     public class Product
-=======
-    class Product
->>>>>>> b27b42ef7ae1c708775f597a3589624e0ab7c2f0
     {
         private string _name;
         private double _priceAtStart;
@@ -31,15 +27,9 @@ namespace Exercise1
             _amountAtStart = amount; 
         }
 
-<<<<<<< HEAD
         public  string PrintPrice()
         {
             return $"{_name}, {_priceAtStart} EUR, {_amountAtStart} units.";
-=======
-        public void PrintPrice()
-        {
-            Console.WriteLine($"{_name}, {_priceAtStart} EUR, {_amountAtStart} units.");
->>>>>>> b27b42ef7ae1c708775f597a3589624e0ab7c2f0
         }
     }
 }
