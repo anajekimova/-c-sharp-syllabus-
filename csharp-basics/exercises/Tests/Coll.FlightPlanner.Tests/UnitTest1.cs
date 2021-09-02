@@ -11,7 +11,7 @@ namespace Coll.FlightPlanner.Tests
             "San Francisco -> New York", "San Francisco -> Honolulu"};
 
         [Fact]
-        public void Chek_Travel_Test()
+        public void GetRout_CitiesFromInput_InformationOfRout()
         {
 
             var expect = "New York -> Anchorage, New York -> San Jose, New York -> San Francisco, New York -> Honolulu";

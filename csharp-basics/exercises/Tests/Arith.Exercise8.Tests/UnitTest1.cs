@@ -9,11 +9,15 @@ namespace Arith.Exercise8.Tests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void MaxHoursWorked_Inputs_ExpectHourLimit()
         {
+            //Arrange
             var expect = "You don`t need to  work so much!";
+
+            //Act
             var result = Program.CheckHours(73, 10);
 
+            //Assert
             Assert.Equal(expect, result);
         }
 
@@ -27,11 +31,15 @@ namespace Arith.Exercise8.Tests
         }
 
         [Fact]
-        public void Test3()
+        public void HourSalary_input_ExpectHourSalary()
         {
+            //Arrange
             var expect = "Your total salary is $262.5";
+
+            //Act
             var result = Program.CheckHours(35, 7.50);
 
+            //Assert
             Assert.Equal(expect, result);
         }
 

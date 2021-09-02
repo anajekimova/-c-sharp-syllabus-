@@ -15,29 +15,41 @@ namespace Coll.WordCount.Tests
             "Too little care of this!";
 
         [Fact]
-        public void Line_CountWordLine_ReturnWordLine()
+        public void LineCount_Input_ExpectLineCount()
         {
+            //Arrert
             var expect = "Line: 6";
+
+            //Act
             var result = WordCount.WordLine(input);
 
+            //Assert
             Assert.Equal(expect, result);
         }
 
         [Fact]
-        public void Word_CountWordWords_ReturnWordWords()
+        public void WordCount_Input_ExpectWordCount()
         {
+            //Arrent
             var expect = "Word: 48";
+
+            //Act
             var result = WordCount.CounWord(input);
 
+            //Assert
             Assert.Equal(expect, result);
         }
 
         [Fact]
-        public void Char_CountWordChar_ReturnWordChar()
+        public void CharCount_Input_ExpectCharCount()
         {
+            //Arrent
             var expect = "Char: 258";
+
+            //Act
             var result = WordCount.CharCount(input);
 
+            //Assert
             Assert.Equal(expect, result);
         }
     }

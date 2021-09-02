@@ -28,13 +28,9 @@ namespace Exercise1
             double difference1 = input2 - input1;
             double num = 15;
             if (input1 == num || input2 == num || sum == num || difference == num || difference1 == num)
-            {
                 return true;
-            }
             else
-            {
                 return false;
-            }
         }
     }
 }

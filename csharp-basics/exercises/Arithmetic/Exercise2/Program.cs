@@ -25,14 +25,11 @@ namespace Exercise2
         public static bool CheckEvenOrOdd(int input)
         {
             int check = input % 2;
-            if (check == 0)
-            {               
-                return true;
-            }
-            else
-            {                
-                return false;
-            }
+
+            if (check == 0)                          
+                return true;           
+            else                           
+                return false;           
         }
     }
 }

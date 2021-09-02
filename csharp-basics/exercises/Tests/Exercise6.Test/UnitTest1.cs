@@ -6,47 +6,67 @@ namespace Exercise6.Test
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void Loza_Number_ExpectLoza()
         {
+            //Arrange
             var expect = "Loza";
+
+            //Act
             var result = Program.ColoLoza(10);
 
+            //Assert
             Assert.Equal(expect, result);
         }
 
         [Fact]
-        public void Test2()
+        public void Coza_Number_ExpectCoza()
         {
+            //Arrange
             var expect = "Coza";
-            var result = Program.ColoLoza(9);
 
+            //Act
+            var result = Program.ColoLoza(9);
+            
+            //Assert
             Assert.Equal(expect, result);
         }
 
         [Fact]
-        public void Test3()
+        public void ColoLoza_Number_ExpectColoLoza()
         {
+            //Arrange
             var expect = "Woza";
+
+            //Act
             var result = Program.ColoLoza(14);
 
+            //Assert
             Assert.Equal(expect, result);
         }
 
         [Fact]
-        public void Test4()
+        public void CozaLoza_Number_ExpectCOzaLoza()
         {
+            //Arrange
             var expect = "CozaLoza";
+
+            //Act
             var result = Program.ColoLoza(15);
 
+            //Assert
             Assert.Equal(expect, result);
         }
 
         [Fact]
-        public void Test65()
+        public void ItNumber_Number_ExpectItNumber()
         {
+            //Arrange
             var expect = "29";
+
+            //Act
             var result = Program.ColoLoza(29);
 
+            //Assert
             Assert.Equal(expect, result);
         }       
     }

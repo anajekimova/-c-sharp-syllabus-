@@ -7,7 +7,7 @@ namespace Classes.Exercise5.Tests
     public class DateTests
     {
         [TestMethod]
-        public void PrintDate_WriteDate_DateTests()
+        public void PrintDate_InputDate_ExpectPrintDate()
         {
             var result = new Date(25, 4, 2021);
             var expect = "25 / 4 / 2021" ;
