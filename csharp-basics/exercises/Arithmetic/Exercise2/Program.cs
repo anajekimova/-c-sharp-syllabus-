@@ -26,10 +26,7 @@ namespace Exercise2
         {
             int check = input % 2;
 
-            if (check == 0)                          
-                return true;           
-            else                           
-                return false;           
+            return check == 0;           
         }
     }
 }
