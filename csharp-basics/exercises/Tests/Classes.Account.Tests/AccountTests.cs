@@ -6,7 +6,7 @@ namespace Classes.Account.Tests
     public class AccountTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Deposide_NewAccountBalnce_ExpectNewDeposide()
         {
             var bartosSwissAccount = new AccountPersone("Barto's account in Switzerland", 1000000.00);
             bartosSwissAccount.Deposit(200);
