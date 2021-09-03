@@ -38,7 +38,6 @@ namespace Classes.Account.Tests
 
             var actual = myAccount.ToString();
 
-            Assert.AreEqual(expect, actual);
-        }
+            Assert.AreEqual(expect, actual);        }
     }
 }
