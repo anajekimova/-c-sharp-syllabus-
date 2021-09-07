@@ -91,7 +91,6 @@ namespace CalculateArea
 
         public static void CalculateTriangleArea()
         {
-
             var keyboard = Console.ReadKey();
             Console.WriteLine("Enter length of the triangle's base: ");
             decimal.TryParse(Console.ReadLine(), out var ground);
