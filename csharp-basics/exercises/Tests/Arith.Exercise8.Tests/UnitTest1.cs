@@ -9,7 +9,7 @@ namespace Arith.Exercise8.Tests
     public class UnitTest1
     {
         [Fact]
-        public void MaxHoursWorked_Inputs_ExpectHourLimit()
+        public void CheckHours_HourseOverLimit_ExpectHourLimitMessage()
         {
             //Arrange
             var expect = "You don`t need to  work so much!";
@@ -31,7 +31,7 @@ namespace Arith.Exercise8.Tests
         }
 
         [Fact]
-        public void HourSalary_input_ExpectHourSalary()
+        public void HourSalary_HoursBasPay_ExpectHourSalary()
         {
             //Arrange
             var expect = "Your total salary is $262.5";

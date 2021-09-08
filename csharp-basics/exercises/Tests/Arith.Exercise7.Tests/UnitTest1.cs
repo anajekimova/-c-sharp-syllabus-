@@ -7,7 +7,7 @@ namespace Arith.Exercise7.Tests
     public class UnitTest1
     {
         [Fact]
-        public void Gravivety_Numbers_ExpectGravity()
+        public void Gravivety_GravityFallingTimeVelocityPositionNumbers_ExpectGravity()
         {
             //Arrange
             var expect = "-490.5";
@@ -20,7 +20,7 @@ namespace Arith.Exercise7.Tests
         }
 
         [Fact]
-        public void NumberPositive_Numbers_ExpectNumberIsPosotive()
+        public void NumberPositive_GravityFallingTimeVelocityPositionNumbers_ExpectNumberIsPosotive()
         {
             //Arrange
             var expect = "All data must be positive";
