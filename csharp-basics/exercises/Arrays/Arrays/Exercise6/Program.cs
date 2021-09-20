@@ -2,26 +2,51 @@
 
 namespace Exercise6
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            int size = 10;
-            int[] arr = new int[size];
+            int[] array = RandomNumber();
+            int[] array1 = ChangeNumber(array);
+
+            Console.Write("Array 1:");
+            for (var i = 0; i < 10; i++)
+            {
+                Console.Write(" " + array[i]);
+            }
+
+            Console.WriteLine();
+            Console.Write("Array 2:");
+            for (var j = 0; j < 10; j++)
+                Console.Write(" " + array1[j]);
+
+            Console.ReadKey();
+        }
+
+        public static int[] RandomNumber()
+        {
             Random randName = new Random();
+            int[] arry = new int[10];
 
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < 10; i++)
             {
-                arr[i] = randName.Next(1, 100);
-                Console.WriteLine(arr[i] + " ");
+                arry[i] = randName.Next(100);               
             }
 
-            arr[9] = -7;
-            for (int i = 0; i < size; i++)
+            return arry;
+        }
+
+        public static int[] ChangeNumber(int [] arry)
+        {
+            int[] newArr = new int[10];
+            newArr[9] = -7;
+            for (int i = 0; i < newArr.Length; i++)
             {
-                Console.WriteLine(arr[i] + "");
+                newArr[i] = arry[i];
             }
+
+            newArr[9] = -7;
+            return newArr;
         }
     }
 }
-

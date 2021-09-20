@@ -8,10 +8,10 @@ namespace Account
 {
     class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Account bartosAccount = new Account("Barto's account", 100.00);
-            Account bartosSwissAccount = new Account("Barto's account in Switzerland", 1000000.00);
+            AccountPersone bartosAccount = new AccountPersone("Barto's account", 100.00);
+            AccountPersone bartosSwissAccount = new AccountPersone("Barto's account in Switzerland", 1000000.00);
 
             Console.WriteLine("Initial state");
             Console.WriteLine(bartosAccount);
@@ -26,8 +26,8 @@ namespace Account
             Console.WriteLine(bartosAccount);
             Console.WriteLine(bartosSwissAccount);
 
-            Account matt = new Account("Matt's account", 1000);
-            Account myAccount = new Account("My account", 0);
+            AccountPersone matt = new AccountPersone("Matt's account", 1000);
+            AccountPersone myAccount = new AccountPersone("My account", 0);
 
             var money = matt.Withdrawal(100);
             myAccount.Deposit(money);
@@ -37,7 +37,7 @@ namespace Account
             Console.ReadLine();
         }
 
-        public static void Transfer(Account from, Account to, double howMuch)
+        public static void Transfer(AccountPersone from, AccountPersone to, double howMuch)
         {
             to.Deposit(from.Withdrawal(howMuch));
         }

@@ -20,13 +20,13 @@ namespace ListExercise10
             };
 
             Console.WriteLine("Original array list: ");
-            Console.WriteLine(string.Join(",", colors));           
+            Console.WriteLine(string.Join(",", colors));
 
-            colors.Clear();
+            //TODO: Remove all elements from list
+            //...
 
             Console.WriteLine("New array list: ");
             Console.WriteLine(string.Join(",", colors));
-            Console.ReadKey();
         }
     }
 }

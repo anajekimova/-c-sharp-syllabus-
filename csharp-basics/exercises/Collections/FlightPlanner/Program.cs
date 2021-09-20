@@ -5,17 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace FlightPlanner
 {
-    class Program
+    public class Program
     {
         private const string Path = "../../flights.txt";
         private static List<string> _flightPlan = new List<string>();
         private static List<Tuple<string, string>> _flight = new List<Tuple<string, string>>();
         private static List<string> _cities = new List<string>();
 
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var readText = File.ReadAllLines(Path);
             foreach (var s in readText)
@@ -61,7 +60,7 @@ namespace FlightPlanner
             Console.ReadKey();
         }
 
-        private static void Travel()
+        public static void Travel()
         {
             Console.WriteLine("To select a city from which you would like to start press 1:");
             var ourChoise2 = Console.ReadLine();
